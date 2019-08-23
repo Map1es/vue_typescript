@@ -1,0 +1,205 @@
+.flex-div {
+  /*从左往右布局(设置从左到右布局)*/
+  display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box; /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox; /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+
+  display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+  -webkit-box-direction: normal; /*定义子元素显示方向：normal默认方向*/
+
+  -webkit-box-orient: horizontal; /*定义子元素是否水平或垂直排列：horizontal水平排列*/
+
+  -moz-flex-direction: row; /*容器样式：主轴方向 row左到右(默认方式)*/
+  -webkit-flex-direction: row;
+  flex-direction: row;
+
+  -moz-box-lines: multiple; /*Firefox  box-lines是否允许子元素换行：multiple允许 默认不允许*/
+  -webkit-box-lines: multiple; /*Safari,Opera,Chrome*/
+  box-lines: multiple;
+
+  -moz-flex-wrap: wrap; /*Firefox    容器央样式：还不换行 warp换行*/
+  -webkit-flex-wrap: wrap; /*Safari,Opera,Chrome*/
+  flex-wrap: wrap;
+}
+.flex-top {
+  /*子元素顶部对齐(上下顶部对齐，默认左右居中)*/
+  display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box; /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox; /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+  display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+
+  -webkit-box-pack: center; /*子元素主轴对齐方式*/
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  -webkit-box-align: start; /*子元素交叉轴对齐方式 start：顶部对齐*/
+  -moz-align-items: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+.flex-center {
+  /*子元素中间对齐 主轴居中(左右中间对其)*/
+  display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box; /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox; /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+  display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+
+  -webkit-box-pack: center; /*定义子元素主轴对其方式*/
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  -webkit-box-align: center; /*子元素交叉轴对其方式*/
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.flex-start {
+  /*子元素中间对齐 主轴默认居左(上下中间对齐  上下居中水平靠左)*/
+  display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box; /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox; /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+  display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+
+  -webkit-box-align: center; /*子元素交叉轴对齐方式 */
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.flex-end {
+  /*(上下居中，水平靠右)*/
+  display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box; /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox; /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+  display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+
+  -webkit-box-pack: end; /*定义子元素的主轴对齐方式*/
+  -moz-justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+
+  -webkit-box-align: center; /*定义子元素的交叉轴对齐方式*/
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.flex-base {
+  /*定义容器的display属性(上下靠上，水平靠左)*/
+  display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box; /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox; /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+  display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
+.flex-inline-base {
+  /*定义行内flex 充满父级高度(高度充满父级元素)*/
+  display: -webkit-box-inline;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.flex-wrap {
+  /*容器样式：是否换行 wrap换行*/
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.direction-column {
+  /*容器样式：从上到下*/
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
+.justify-center {
+  /*子元素主轴对齐方式：居中*/
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+
+.justify-between {
+  /*子元素主轴对齐方式：两端对齐*/
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.justify-around {
+  /*子元素主轴对齐方式：平均分布(分成子元素的平均宽度)*/
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.justify-end {
+  /*容器样式：右对齐*/
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.items-center {
+  /*容器样式：居中对齐(上下居中)*/
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.items-end {
+  /*容器样式：底部对齐(上下底部对齐)*/
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.items-start {
+  /*容器样式：顶部对齐(上下顶部对齐)*/
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.flex-single {
+  /*容器样式:不换行  子元素样式：不换行*/
+  display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box; /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox; /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+  display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+
+  -moz-box-lines: single; /*Firefox  定义子元素超出容器是否允许换行 single不允许*/
+  -webkit-box-lines: single; /*Safari,Opera,Chrome*/
+  box-lines: single;
+
+  -moz-flex-wrap: nowrap; /*Firefox   容器样式：nowrap不换行*/
+  -webkit-flex-wrap: nowrap; /*Safari,Opera,Chrome */
+  flex-wrap: nowrap;
+}
+
+.align-center {
+  -webkit-align-content: center; /*容器样式：多主轴对齐：居中对齐*/
+  -moz-align-content: center;
+  -ms-align-content: center;
+  -o-align-content: center;
+  align-content: center;
+}

@@ -1,0 +1,19 @@
+@function vw($n) {
+  @return ($n * 100 / 750);
+}
+
+// 生成一个正方形
+@mixin square($n) {
+  width: vw($n);
+  height: vw($n);
+}
+
+@mixin headerImg($n) {
+  width: vw($n);
+  height: vw($n);
+  border-radius: 50%;
+  background-color: aliceblue;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}

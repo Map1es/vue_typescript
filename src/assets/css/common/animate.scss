@@ -1,0 +1,25 @@
+// 透明度的变化
+.opacity-enter-active,
+.opacity-leave-active {
+  transition: opacity 0.25s;
+}
+
+.opacity-enter,
+.opacity-leave-to {
+  opacity: 0;
+}
+
+// 从下想向上的动画
+.up-enter-active,
+.up-leave-active {
+  transition: all 0.25s ease-out;
+}
+
+.up-enter,
+.up-leave-to {
+  top: 100%;
+}
+.up-enter-to,
+.up-leave {
+  top: 0;
+}
